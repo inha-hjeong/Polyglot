@@ -4,7 +4,13 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
+import narzullaev.bekzod.translator_kmm.translate.data.local.FakeHistoryDataSource
+import narzullaev.bekzod.translator_kmm.translate.data.remote.FakeTranslateClient
+import narzullaev.bekzod.translator_kmm.translate.domain.history.HistoryDataSource
+import narzullaev.bekzod.translator_kmm.translate.domain.translate.Translate
 import narzullaev.bekzod.translator_kmm.translate.domain.translate.TranslateClient
+import narzullaev.bekzod.translator_kmm.voice_to_text.data.FakeVoiceToTextParser
+import narzullaev.bekzod.translator_kmm.voice_to_text.domain.VoiceToTextParser
 import javax.inject.Singleton
 
 @Module

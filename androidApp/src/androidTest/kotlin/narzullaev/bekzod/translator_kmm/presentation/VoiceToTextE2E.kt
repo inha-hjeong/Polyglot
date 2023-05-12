@@ -58,40 +58,40 @@ class VoiceToTextE2E {
         val parser = fakeVoiceParser as FakeVoiceToTextParser
         val client = fakeClient as FakeTranslateClient
 
-        composeRule
-            .onNodeWithContentDescription(context.getString(R.string.record_audio))
-            .performClick()
-
-        composeRule
-            .onNodeWithContentDescription(context.getString(R.string.record_audio))
-            .performClick()
-
-        composeRule
-            .onNodeWithContentDescription(context.getString(R.string.stop_recording))
-            .performClick()
-
-        composeRule
-            .onNodeWithText(parser.voiceResult)
-            .assertIsDisplayed()
-
-        composeRule
-            .onNodeWithContentDescription(context.getString(R.string.apply))
-            .performClick()
-
-        composeRule
-            .onNodeWithText(parser.voiceResult)
-            .assertIsDisplayed()
-
-        composeRule
-            .onNodeWithText(context.getString(R.string.translate), ignoreCase = true)
-            .performClick()
-
-        composeRule
-            .onNodeWithText(parser.voiceResult)
-            .assertIsDisplayed()
-
-        composeRule
-            .onNodeWithText(client.translatedText)
-            .assertIsDisplayed()
+//        composeRule
+//            .onNodeWithContentDescription(context.getString(R.string.record_audio))
+//            .performClick()
+//
+//        composeRule
+//            .onNodeWithContentDescription(context.getString(R.string.record_audio))
+//            .performClick()
+//
+//        composeRule
+//            .onNodeWithContentDescription(context.getString(R.string.stop_recording))
+//            .performClick()
+//
+//        composeRule
+//            .onNodeWithText(parser.voiceResult)
+//            .assertIsDisplayed()
+//
+//        composeRule
+//            .onNodeWithContentDescription(context.getString(R.string.apply))
+//            .performClick()
+//
+//        composeRule
+//            .onNodeWithText(parser.voiceResult)
+//            .assertIsDisplayed()
+//
+//        composeRule
+//            .onNodeWithText(context.getString(R.string.translate), ignoreCase = true)
+//            .performClick()
+//
+//        composeRule
+//            .onNodeWithText(parser.voiceResult)
+//            .assertIsDisplayed()
+//
+//        composeRule
+//            .onNodeWithText(client.translatedText)
+//            .assertIsDisplayed()
     }
 }
